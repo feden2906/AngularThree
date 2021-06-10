@@ -1,0 +1,9 @@
+.bodys {
+  display: flex;
+}
+
+.bodyElement1 {
+  width: 50%;
+  height: 100%;
+}
+

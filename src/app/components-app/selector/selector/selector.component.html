@@ -1,0 +1,17 @@
+<form [formGroup]="someFor" (change)="someLog()" >
+  <select [formControlName]="'id'">
+    <option *ngFor="let user of users" [value]="user.id">{{user.id}} - {{user.name}}</option>
+  </select>
+</form>
+
+
+<form [formGroup]="someFor" (ngSubmit)="someLog()" >
+  <select [formControlName]="'id'">
+    <option *ngFor="let user of users" [value]="user.id">{{user.id}} - {{user.name}}</option>
+  </select>
+  <button>Show</button>
+</form>
+
+<div *ngFor = "let post of posts" >
+<app-select *ngIf="+post.userId === +someFor.value.id" [post] = "post"></app-select>
+</div>

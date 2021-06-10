@@ -1,0 +1,9 @@
+<div style = "display: flex">
+  <div [className] = "'bodyElement1'"><h2 style = "width: 100%">Users</h2>
+    <app-user *ngFor = "let user of users" [user] = "user"></app-user>
+  </div>
+  <router-outlet style = "object-fit: cover;"></router-outlet>
+
+</div>
+
+
